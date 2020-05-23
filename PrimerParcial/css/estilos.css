@@ -1,0 +1,117 @@
+body{
+    background-color: rgba(212, 225, 240, 0.274);
+}
+
+.divContenedor{
+    background-color: rgba(45, 126, 218, 0.411);
+    border-radius: 5px;
+    margin: 2px;
+}
+
+h2{
+    margin: 5px;
+    padding-top: 15px;
+}
+
+#tablaMaterias{
+    width: 100%;
+    margin-top: 0px;
+    vertical-align: center;
+    /*background-color: rgba(45, 126, 218, .7);*/
+    border-radius: 5px;
+    font: center; 
+    padding:10px;
+    position: relative;  
+    text-align: center;  
+    border:0.5;
+}
+
+thead{
+    height: 50px;
+    font-size: 18px;
+    background-color: rgba(45, 126, 218, 0.411);
+}
+
+tbody{
+    background-color: rgb(212, 225, 240);
+    
+}
+
+#divPopUp{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+    background-color: rgb(110, 175, 248);
+    border-radius: 10px;
+    border:solid,rgb(4, 58, 121) ,5px;
+    
+    min-height: 300px;
+}
+
+h2{
+    padding-top: 10px;
+    text-align: center;
+}
+
+label{
+    margin-left:20px;
+}
+.carga input, select{
+    width: 90%;
+    margin:5px 20px;
+    background-color: rgb(212, 225, 240);
+}
+
+#divRadio{
+    display: flex;
+}
+
+.divTurno{
+    width: 50%;
+    flex-direction: row;
+}
+
+.btnPopUp{
+    margin: 15px;
+    background-color: rgba(45, 126, 218, 0.411);
+    color: black;
+    border-radius: 10px;
+    height: 25px;
+}
+
+#btnModificar{
+    background-color: rgba(13, 175, 99, 0.979);
+}
+
+#btnEliminar{
+    background-color: rgba(245, 9, 9, 0.932);
+}
+
+.sinError{
+    border:1px solid #ccc;
+}
+
+.conError{
+    border:1px solid rgb(248, 6, 6);
+}
+
+#divSpinner{
+    background-color: rgba(162, 189, 240, 0);
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    top: 25%;
+    left: 25%;
+}
+
+#divCabeceraPopUp,#divFooterPopUp{
+    border: solid,rgb(4, 58, 121) ,5px;
+}
+
+#divFormularioPopIp{
+    background-color: rgb(164, 193, 248);
+    border:solid,rgb(4, 58, 121) ,5px;
+}
+

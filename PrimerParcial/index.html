@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <script src="./js/index.js"></script>
+        <link rel="stylesheet" href="./css/estilos.css">
+        <title>Primer Parcial Sofia Roumieu</title>
+    </head>
+    <body>
+        <div class="divContenedor" id="divGrilla">
+            <h2>Listado de Materias</h2>
+            <table id="tablaMaterias">
+                <thead>
+                    <tr>
+                        <th hidden>Id</th>
+                        <th>Nombre</th>
+                        <th>Cuatrimestre</th>
+                        <th>Fecha Final</th>
+                        <th>Turno</th>
+                    </tr>
+                </thead>
+                <tbody id="bodyMaterias">
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <div id="divPopUp" hidden>
+
+            <div id="divCabeceraPopUp">
+                <h2>Datos de la Materia</h2>
+            </div>
+
+            <div id="divFormularioPopIp">
+                <div>
+                    <div class="carga">
+                        <label for="inpNombre">Nombre:</label>
+                    </div>
+                    <div class="carga">
+                        <input class="sinError" type="text" id="inpNombre">
+                    </div>
+                <!--</div>
+                <div>-->
+                    <div class="carga">
+                        <label for="inpCuatrimestre">Cuatrimestre:</label>
+                    </div>
+                    <select class="carga" id="inpCuatrimestre">
+                        <option value="1">Primero</option>
+                        <option value="2">Segundo</option>
+                        <option value="3">Tercero</option>
+                        <option value="4">Cuarto</option>
+                    </select>
+                </div>
+                <div>
+                    <div class="carga">
+                        <label for="inpTurno">Turno:</label>
+                    </div>
+                    <div class="carga" id="divRadio">
+                        <div class="divTurno">
+                            <label for="mañana">Mañana</label>
+                            <input class="sinError" type="radio" id="mañana" name="gender" value="mañana">
+                        </div>  
+                        <div class="divTurno">
+                            <label for="noche">Noche</label>
+                            <input class="sinError" type="radio" id="noche" name="gender" value="noche">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="carga">
+                        <label for="inpFechaFinal">Fecha de Final:</label>
+                    </div>
+                    <div class="carga">    
+                        <input class="sinError" type="date" id="inpFechaFinal">
+                    </div>
+                </div>
+            </div>
+            <div id="divFooterPopUp">
+                <input class="btnPopUp" id="btnModificar" type="button" value="Modificar" onClick="modificarMateria()">
+                <input class="btnPopUp" id="btnEliminar" type="button" value="Eliminar" onClick="eliminarMateria()">
+                <input class="btnPopUp" id="btnCancelar" type="button" value="Cancelar" onClick="cancelar()">
+            </div>
+        </div>
+
+        <div id="divSpinner" hidden>
+            <input id="inpSpinner" type="image" src="./img/spinner.gif">
+        </div>
+    </body>
+</html>
